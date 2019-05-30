@@ -14,5 +14,10 @@ I do six things,
 5. Download The OECD functional economic area [shapefile for the UK](https://www.oecd.org/cfe/regional-policy/functionalurbanareasbycountry.htm) and select my eight cities of interest.
 6. Use the `clip` function in QGIS to retain only the parking in those cities. A full file of all parking Great Britain is also provided. Both are exported in GEOJSON format and available for download in this repository.
 
+## Next step (expanding to the whole of the UK, Europe, the world etc...)
+1. Validate the parking file in QGIS (`Vector>Geometry Tools>Check Validity...`).
+2. Save the valid portion in SpatialLite format (including a spatial index) from within QGIS.
+3. Use ogr2ogr.exe running on a webserver to serve in geojson only the features within the current viewbox in leaflet. Examples commands are `ogr2ogr.exe -f "geojson" -spat -2 52 0 53 "/vsistdout/" GBParking_valid_indexed.sqlite` (output geojson to the console) and `ogr2ogr.exe -spat -2 52 0 53 clipped.geojson GBParking_valid_indexed.sqlite` (output geojson to a file).
+
 ## License
 All mapping data is Copyright of The Open Street Contributors.
