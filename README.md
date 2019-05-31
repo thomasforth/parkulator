@@ -1,7 +1,14 @@
 # Parkulator
 See how much space in your city is taken up by parking.
 
-For eight [OECD functional urban areas](https://www.oecd.org/cfe/regional-policy/functionalurbanareasbycountry.htm) of the UK (Birmingham, Manchester, Leeds, Bradford, Liverpool, Leicester, Nottingham, and Sheffield) you can explore this data at [imactivate.com/parkulator](http://www.imactivate.com/parkulator) now.
+You can explore this data for GB (and soon the world) at [imactivate.com/parkulator](http://www.imactivate.com/parkulator) now.
+
+## FAQs
+Why isn't my place included?
+Sorry, it will be soon. I'm still learning and I need a few more weeks.
+
+Why is a car park missing or wrong?
+Because it's missing or wrong on Open Street Map. If you go and fix that on Open Street Map it'll eventually be fixed on my tool.
 
 ## Method
 This tool uses [osmconvert](https://wiki.openstreetmap.org/wiki/Osmconvert#Exclude_Information_or_Contents_from_the_Output_File), [osmfilter](https://wiki.openstreetmap.org/wiki/Osmfilter#Keep_only_specific_Tags), and [raw open street map downloads from Geofabrik](http://download.geofabrik.de/). As such all data is Copyright of The Open Street Contributors.
